@@ -86,7 +86,7 @@ def showresults():
     Button(results_screen, text="Leaderboards", font=("arial 10 italic"), bg="black", fg="white", padx="25", command=leaderboard).pack(anchor=E)
     Label(results_screen, text="").pack()
 
-
+### function to store results
 def store_stats():
     global total_ans
     total_ans=maxcount+maxcount1+maxcount2+maxcount3+maxcount4+maxcount5+maxcount6+maxcount7+maxcount8+maxcount9
