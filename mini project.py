@@ -64,7 +64,7 @@ def leaderboard():
     Button(leaderboard_screen, text="Close", font=("Algerian 10"),bg="grey", fg="white", command=close).grid(column=1,row=rownum+2)
     Button(leaderboard_screen, text="Home Page", font=("Algerian 10"), bg="grey", fg="white", command=goback).grid(column=2, row=rownum + 2)
 
-
+### function to display results
 def showresults():
     global results_screen
     ques10_screen.destroy()
@@ -86,7 +86,7 @@ def showresults():
     Button(results_screen, text="Leaderboards", font=("arial 10 italic"), bg="black", fg="white", padx="25", command=leaderboard).pack(anchor=E)
     Label(results_screen, text="").pack()
 
-
+### function to store results
 def store_stats():
     global total_ans
     total_ans=maxcount+maxcount1+maxcount2+maxcount3+maxcount4+maxcount5+maxcount6+maxcount7+maxcount8+maxcount9
@@ -271,7 +271,7 @@ def ques1():
     v = IntVar()
     global M
     M=[]
-    
+
     Label(ques1_screen, text="QUESTION-1", font="10", bg="black", fg="white", width="50", height="3").pack()
     Label(ques1_screen, text="").pack()
     Label(ques1_screen, text="Replace ? by suitable options \n"
@@ -301,7 +301,7 @@ def ques2():
     v = IntVar()
     global M
     M = []
-    
+
     Label(ques2_screen, text="QUESTION-2", font="10", bg="black", fg="white", width="50", height="3").pack()
     Label(ques2_screen, text="").pack()
     Label(ques2_screen, text=" Replace the ? \n"
@@ -325,7 +325,7 @@ def ques3():
     ques3_screen.geometry("500x500")
     ques3_screen.title("QUESTION-3")
     ques3_screen.resizable(False,False)
-    
+
     Label(ques3_screen, text="QUESTION-3", font="10", bg="black", fg="white", width="50", height="3").pack()
     Label(ques3_screen, text="").pack()
     Label(ques3_screen, text=" Adequate : Enough :: Veracity : ? \n", font="7").pack()
@@ -348,7 +348,7 @@ def ques4():
     ques4_screen.geometry("500x500")
     ques4_screen.title("QUESTION-4")
     ques4_screen.resizable(False,False)
-    
+
     Label(ques4_screen, text="QUESTION-4", font="10", bg="black", fg="white", width="50", height="3").pack()
     Label(ques4_screen, text="").pack()
     Label(ques4_screen, text="Statements:  Z>B=S , Y≥B>F , H<S≤Y , Z>S≥T\n"
@@ -374,7 +374,7 @@ def ques5():
     ques5_screen.geometry("500x500")
     ques5_screen.title("QUESTION-5")
     ques5_screen.resizable(False,False)
-    
+
     Label(ques5_screen, text="QUESTION-5", font="10", bg="black", fg="white", width="50", height="3").pack()
     Label(ques5_screen, text="").pack()
     Label(ques5_screen, text="Complete the given sequence \n 7, 23, 55, 109, __", font="7").pack()
@@ -389,7 +389,7 @@ def ques5():
     Button(ques5_screen, text="NEXT", font="1", fg="white", bg="black", command=fifth_assign).pack()
     Label(ques5_screen, text="").pack()
 
-    
+
 
 def ques6():
     global ques6_screen
@@ -398,7 +398,7 @@ def ques6():
     ques6_screen.geometry("500x500")
     ques6_screen.title("QUESTION-6")
     ques6_screen.resizable(False,False)
-    
+
     Label(ques6_screen, text="QUESTION-6", font="10", bg="black", fg="white", width="50", height="3").pack()
     Label(ques6_screen, text="").pack()
     Label(ques6_screen, text="Pointing to a photograph, a lady tells Pramod "
@@ -423,7 +423,7 @@ def ques7():
     ques7_screen.geometry("500x500")
     ques7_screen.title("QUESTION-7")
     ques7_screen.resizable(False,False)
-    
+
     Label(ques7_screen, text="QUESTION-7", font="10", bg="black", fg="white", width="50", height="3").pack()
     Label(ques7_screen, text="").pack()
     Label(ques7_screen, text="Find the missing term in the series \n"
@@ -447,7 +447,7 @@ def ques8():
     ques8_screen.geometry("500x500")
     ques8_screen.title("QUESTION-8")
     ques8_screen.resizable(False,False)
-    
+
     Label(ques8_screen, text="QUESTION-8", font="10", bg="black", fg="white", width="50", height="3").pack()
     Label(ques8_screen, text="").pack()
     Label(ques8_screen, text="Find the missing term in the series \n"
@@ -472,7 +472,7 @@ def ques9():
     ques9_screen.geometry("500x500")
     ques9_screen.title("QUESTION-9")
     ques9_screen.resizable(False,False)
-    
+
     Label(ques9_screen, text="QUESTION-9", font="10", bg="black", fg="white", width="50", height="3").pack()
     Label(ques9_screen, text="").pack()
     Label(ques9_screen, text="Find the missing term in the series \n"
@@ -496,7 +496,7 @@ def ques10():
     ques10_screen.geometry("500x500")
     ques10_screen.title("QUESTION-10")
     ques10_screen.resizable(False,False)
-    
+
     Label(ques10_screen, text="QUESTION-10", font="10", bg="black", fg="white", width="50", height="3").pack()
     Label(ques10_screen, text="").pack()
     Label(ques10_screen, text=" If PIYUSH is ZYIKCX\n"
@@ -534,7 +534,7 @@ def details():
     Label(detailscreen, text="").pack()
     Button(detailscreen, text="BEGIN ==>", font="1", fg="white", bg="black", command=ques1).pack()
     Label(detailscreen, text="").pack()
-    
+
 
 def check_validity_entrynum():
 
